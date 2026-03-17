@@ -98,5 +98,12 @@
   "item.satiscraftory.ballistic_warp_drive": "Ballistic Warp Drive",
   "item.satiscraftory.ai_expansion_server": "AI Expansion Server",
 
+  "block.satiscraftory.limestone_ore": "Limestone Ore",
+  "block.satiscraftory.caterium_ore": "Caterium Ore",
+  "block.satiscraftory.sulfur_ore": "Sulfur Ore",
+  "block.satiscraftory.bauxite_ore": "Bauxite Ore",
+  "block.satiscraftory.sam_ore": "SAM Ore",
+  "block.satiscraftory.uranium_ore": "Uranium Ore",
+
   "satiscraftory_tab": "Satiscraftory"
 }

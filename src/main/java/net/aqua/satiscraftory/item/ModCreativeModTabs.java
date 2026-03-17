@@ -1,6 +1,7 @@
 package net.aqua.satiscraftory.item;
 
 import net.aqua.satiscraftory.Satiscraftory;
+import net.aqua.satiscraftory.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -115,6 +116,15 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.biochemical_sculptor.get());
                         output.accept(ModItems.ballistic_warp_drive.get());
                         output.accept(ModItems.ai_expansion_server.get());
+
+                        output.accept(ModBlocks.limestone_ore.get());
+                        output.accept(ModBlocks.caterium_ore.get());
+                        output.accept(ModBlocks.sulfur_ore.get());
+                        output.accept(ModBlocks.bauxite_ore.get());
+                        output.accept(ModBlocks.sam_ore.get());
+                        output.accept(ModBlocks.uranium_ore.get());
+
+
                     })
                     .build());
 

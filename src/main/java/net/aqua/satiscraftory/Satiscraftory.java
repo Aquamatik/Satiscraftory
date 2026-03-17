@@ -1,6 +1,7 @@
 package net.aqua.satiscraftory;
 
 import com.mojang.logging.LogUtils;
+import net.aqua.satiscraftory.block.ModBlocks;
 import net.aqua.satiscraftory.item.ModCreativeModTabs;
 import net.aqua.satiscraftory.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -29,6 +30,7 @@ public class Satiscraftory {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
