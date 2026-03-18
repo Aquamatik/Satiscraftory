@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "satiscraftory:item/thermal_propulsion_rocket"
-  }
-}

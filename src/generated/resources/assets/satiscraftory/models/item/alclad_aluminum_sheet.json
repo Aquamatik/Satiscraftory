@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "satiscraftory:item/alclad_aluminum_sheet"
+  }
+}

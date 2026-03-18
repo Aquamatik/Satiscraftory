@@ -1,0 +1,7 @@
+// 1.20.1	2026-03-18T21:57:08.3215593	Registries
+c3abab56562b4c56b05c6cbb11c32c9eebc13866 data/satiscraftory/forge/biome_modifier/add_end_ore.json
+76833419e7a115c90bc9f8f98b11d5e3fbee190c data/satiscraftory/forge/biome_modifier/add_nether_ore.json
+b5f36edf1adba085ccb76ba8c29b4cd04a8ccb3e data/satiscraftory/worldgen/configured_feature/mod_end_ore.json
+2382ff1ce438f0e590cea4a5e31d52e1198fc7e7 data/satiscraftory/worldgen/configured_feature/mod_nether_ore.json
+7fa9d2316173cf785a034539fe6c77afc52a2f5e data/satiscraftory/worldgen/placed_feature/end_ore_placed.json
+06f54ac3ff2e627f4382d56ca717c17db29d1ebb data/satiscraftory/worldgen/placed_feature/nether_ore_placed.json

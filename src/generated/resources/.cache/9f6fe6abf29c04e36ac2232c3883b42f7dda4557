@@ -1,0 +1,4 @@
+// 1.20.1	2026-03-18T21:32:01.9804714	Tags for minecraft:block mod id satiscraftory
+e61f87e0132fad145b82f996b4865084039ca6fa data/minecraft/tags/blocks/mineable/pickaxe.json
+f46afaa875c79fac8aa06c542d83f74cb70a46a2 data/minecraft/tags/blocks/needs_diamond_tool.json
+6d127b907aacd3390d3e5b21f0d62be7c3ee3f46 data/minecraft/tags/blocks/needs_iron_tool.json
