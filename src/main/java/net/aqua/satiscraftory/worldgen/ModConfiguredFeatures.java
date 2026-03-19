@@ -17,25 +17,25 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import java.util.List;
 
 public class ModConfiguredFeatures {
-    public static final ResourceKey<ConfiguredFeature<?, ?>> END_ORE_KEY = registerKey("mod_end_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_ORE_KEY = registerKey("mod_nether_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_LIMESTONE_KEY = registerKey("nether_limestone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_CATERIUM_KEY = registerKey("nether_caterium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SULFUR_KEY = registerKey("nether_sulfur_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_BAUXITE_KEY = registerKey("end_bauxite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_URANIUM_KEY = registerKey("end_uranium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_SAM_KEY = registerKey("end_sam_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest netherrackReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
         RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
-        List<OreConfiguration.TargetBlockState> netherOres = List.of(OreConfiguration.target(netherrackReplaceables,
-                ModBlocks.limestone_ore.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplaceables, ModBlocks.caterium_ore.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplaceables, ModBlocks.sulfur_ore.get().defaultBlockState()));
 
-        List<OreConfiguration.TargetBlockState> endOres = List.of(OreConfiguration.target(endReplaceables,
-                ModBlocks.bauxite_ore.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, ModBlocks.sam_ore.get().defaultBlockState()),
-                OreConfiguration.target(endReplaceables, ModBlocks.uranium_ore.get().defaultBlockState()));
-
-        register(context, NETHER_ORE_KEY, Feature.ORE, new OreConfiguration(netherOres, 1));
-        register(context, END_ORE_KEY, Feature.ORE, new OreConfiguration(endOres, 1));
+        register(context, NETHER_LIMESTONE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.limestone_ore.get().defaultBlockState(), 3));
+        register(context, NETHER_CATERIUM_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.caterium_ore.get().defaultBlockState(), 3));
+        register(context, NETHER_SULFUR_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.sulfur_ore.get().defaultBlockState(), 3));
+        register(context, END_URANIUM_KEY, Feature.ORE, new OreConfiguration(endReplaceables, ModBlocks.uranium_ore.get().defaultBlockState(), 3));
+        register(context, END_BAUXITE_KEY, Feature.ORE, new OreConfiguration(endReplaceables, ModBlocks.bauxite_ore.get().defaultBlockState(), 3));
+        register(context, END_SAM_KEY, Feature.ORE, new OreConfiguration(endReplaceables, ModBlocks.sam_ore.get().defaultBlockState(), 3));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
